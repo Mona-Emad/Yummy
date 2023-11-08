@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yammy</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--end css links -->
+  </head>
+  <body class="position-relative w-100 bg-black">
+    <!-- saide navbar -->
+    <aside class="position-fixed d-flex z-3 w-25 bg-black">
+      <ul class="list-unstyled w-100 bg-black vh-100 z-3">
+        <li class="animate__animated search-link">Search</li>
+        <li class="animate__animated cate-link">Categories</li>
+        <li class="animate__animated area-link">Area</li>
+        <li class="animate__animated ingredients-link">Ingredients</li>
+        <li class="animate__animated Contact-link">Contact Us</li>
+        <div
+          class="w-100 position-absolute bottom-0 d-flexm flex-column align-items-center p-4"
+        >
+          <div class="footer-icon ps-2 d-flex text-white gap-1">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe d-block"></i>
+          </div>
+          <p class="footor text-white">
+            Copyright Â© 2019 All Rights <br />
+            Reserved.
+          </p>
+        </div>
+      </ul>
+
+      <div class="navKey py-4" id="navKey">
+        <img src="images/logo.png" alt="smail Face" />
+        <i class="fa-solid fa-bars text-dark fa-xl fa-x" id="closeNav"></i>
+        <i class="fa-solid fa-bars text-dark fa-xl d-none" id="openNav"></i>
+        <div class="icons">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+    <!-- main data -->
+
+    <section class="bg-black py-5">
+      <div class="container">
+        <div class="search-form d-none">
+          <div
+            class="form d-flex align-items-center justify-content-center gap-2 mb-5"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Search by Name"
+              class="form-control animate__animated animate__bounceInDown"
+              id="nameSearch"
+            />
+            <input
+              type="text"
+              name="letter"
+              placeholder="Search by First Letter"
+              class="form-control animate__animated animate__bounceInDown"
+              id="letterSearch"
+            />
+          </div>
+        </div>
+
+        <div
+          class="all-images row diplay-Conainer mb-4 flex my-auto align-items-center"
+          id="allImages"
+        ></div>
+
+        <div class="imgInfo bg-black z-2 position-absolute h-100 top-0"></div>
+      </div>
+    </section>
+    <section
+      class="form-cuntiner bg-black vh-100 overflow-hidden d-none position-absolute top-0 w-100 align-items-center justify-content-center"
+    >
+      <div class="container">
+        <div class="row mb-4 flex w-75 mx-auto align-items-center">
+          <div class="col-md-6">
+            <div class="form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                class="form-control mb-4 animate__animated animate__bounceInDown"
+                id="uName"
+              />
+              <p class="alert d-none alert-danger">
+                Special characters and numbers not allowed
+              </p>
+              <input
+                type="text"
+                name="phone"
+                placeholder="Enter Your Number"
+                class="form-control mb-4 animate__animated animate__bounceInDown"
+                id="nPhone"
+              />
+              <p class="alert d-none alart-phone alert-danger">
+                Enter valid Phone Number
+              </p>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter Your password"
+                class="form-control mb-4 animate__animated animate__bounceInDown"
+                id="password"
+              />
+              <p class="alert d-none alart-password alert-danger">
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Search by email"
+                class="form-control mb-4 animate__animated animate__bounceInDown"
+                id="uEmail"
+              />
+              <p class="alert d-none alart-email alert-danger">
+                Email not valid *exemple@yyy.zzz
+              </p>
+              <input
+                type="number"
+                name="age"
+                placeholder="Enter Your age"
+                class="form-control mb-4 animate__animated animate__bounceInDown"
+                id="uAge"
+              />
+              <p class="alert d-none alart-age alert-danger">Enter valid age</p>
+              <input
+                type="password"
+                name="password"
+                placeholder="Re password"
+                class="form-control mb-4 animate__animated animate__bounceInDown"
+                id="rePassword"
+              />
+              <p class="alert d-none alart-repassword alert-danger">
+                Enter valid repassword
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button
+            class="btn btn-outline-danger btn-form pointer-event"
+            disabled
+          >
+            Submet
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="looding position-fixed top-0 start-0 end-0 bottom-0 bg-black bg-opacity-75 z-3 d-flex align-items-center justify-content-center"
+    >
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- js links -->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--end js links -->
+  </body>
+</html>

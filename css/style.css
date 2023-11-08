@@ -1,0 +1,190 @@
+body
+{
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+
+.diplay-Conainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.all-span span.span
+{
+  background-color: aquamarine;
+  line-height: 2.7rem;
+
+}
+ul li
+{
+  font-size: .9375rem;
+  font-weight: bold;
+}
+/* =============styl for hover img================ */
+.imag
+{
+    position: relative;
+    margin-block: 20px;
+    padding: 0;
+    overflow: hidden;
+    transition: all 1s;
+    
+}
+.card-image{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    display: flex;
+    align-items: center;
+    top: 100%;
+    bottom:-7rem ;
+    width: 100%;
+    transition: all .6s;
+}
+.imag:hover .card-image
+{
+    top: 0;
+    bottom: 0;
+}
+
+aside li{
+    margin: 1.25rem ;
+    font-size: 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+aside #navKey i{
+    cursor: pointer;
+}
+aside #navKey{
+    width: 20%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+
+}
+#navKey img{
+    width: 100%;
+}
+
+
+
+/* ==============style for search====================== */
+.search-form .form-control::placeholder{
+    color: gray;
+}
+.search-form .form-control{
+    width: 40%;
+    margin-left: 10px;
+    background: initial;
+    color: #eee;
+    
+}
+.footor
+{
+  width: fit-content;
+}
+
+
+
+
+/* ==============style for category====================== */
+
+.card-image.card-categ h2,p
+{
+    text-align: center;
+    color: black;
+  
+}
+.btn-form{
+    width: fit-content;
+    cursor: pointer;
+}
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
